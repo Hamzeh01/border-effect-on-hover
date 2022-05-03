@@ -64,21 +64,29 @@ body {
 .box:before {
     z-index: 1;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 0;
     height: 0;
     content: "";
     background: transparent;
+    transition: all .7s;
 
 }
 
 .box:hover:after {
     top: 6%;
-    left: 4%;
+    left: 6%;
     border-top: 1px solid white;
     border-left: 1px solid white;
-    width: 87%;
-    height: 87%;
+    width: 90%;
+    height: 90%;
 
+}
+
+.box:hover:before {
+    bottom: 6%;
+    right: 6%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    width: 90%;
+    height: 90%;
 }
