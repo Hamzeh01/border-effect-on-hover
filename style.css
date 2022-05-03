@@ -1,4 +1,4 @@
-* {
+html {
     margin: 0;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
@@ -8,16 +8,15 @@
 
 html,
 body {
-    background-color: azure;
+    background-color: #FFFFF;
     font-size: 1.563rem;
-    font-family: sans-serif;
-    font-weight: 400;
+    font-family: 'Arvo', serif;
 }
 
 .box {
     width: 31.25rem;
     height: 20.625rem;
-    border: 4px solid green;
+    border: 3px solid #8AAAE5;
     overflow: hidden;
     margin: 80px auto;
     position: relative;
@@ -35,19 +34,19 @@ body {
 }
 
 .box:hover img {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .title,
 .detail {
     z-index: 1;
-    color: burlywood;
-    font-family: cursive;
+    color: #8AAAE5;
+
     position: absolute;
     display: block;
     bottom: 10%;
     left: 10%;
-    font-size: 120%;
+    font-size: 110%;
     transition: all .7s;
 }
 
@@ -75,8 +74,8 @@ body {
 .box:hover:after {
     top: 6%;
     left: 6%;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
     width: 90%;
     height: 90%;
 
@@ -85,8 +84,8 @@ body {
 .box:hover:before {
     bottom: 6%;
     right: 6%;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
     width: 90%;
     height: 90%;
 }
